@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import { NextUIProvider } from '@nextui-org/react'
 import { ThemeProvider } from 'next-themes'
 import './globals.css'
+import MyHeader from '@/components/MyHeader/MyHeader'
 
 const geistSans = localFont({
     src: './fonts/GeistVF.woff',
@@ -32,7 +33,10 @@ export default function RootLayout({
             >
                 <NextUIProvider>
                     <ThemeProvider attribute="class" defaultTheme="dark">
-                        {children}
+                        <div className="flex-col">
+                            <MyHeader />
+                            {children}
+                        </div>
                     </ThemeProvider>
                 </NextUIProvider>
             </body>

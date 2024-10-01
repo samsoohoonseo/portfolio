@@ -1,3 +1,5 @@
+'use client'
+
 import {
     Navbar,
     NavbarBrand,
@@ -5,8 +7,10 @@ import {
     NavbarItem,
 } from '@nextui-org/react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const MyHeader = () => {
+    const pathname = usePathname()
     return (
         <Navbar maxWidth="full">
             <NavbarContent justify="start">
@@ -15,12 +19,12 @@ const MyHeader = () => {
                 </NavbarBrand>
             </NavbarContent>
             <NavbarContent justify="center">
-                <NavbarItem isActive>
+                <NavbarItem isActive={pathname === '/'}>
                     <Link color="foreground" href="/" aria-current="page">
                         About
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem isActive={pathname === '/projects'}>
                     <Link
                         color="foreground"
                         href="/projects"
@@ -29,7 +33,7 @@ const MyHeader = () => {
                         Projects
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem isActive={pathname === '/misc'}>
                     <Link color="foreground" href="#">
                         Misc
                     </Link>

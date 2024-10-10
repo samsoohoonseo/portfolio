@@ -33,11 +33,6 @@ const MyHeader = () => {
                         Projects
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive={pathname === '/misc'}>
-                    <Link color="foreground" href="#">
-                        Misc
-                    </Link>
-                </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end"></NavbarContent>
         </Navbar>

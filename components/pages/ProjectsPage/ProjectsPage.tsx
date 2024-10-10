@@ -1,23 +1,41 @@
-import { Card } from '@nextui-org/react'
+import MyCard from '@/components/organisms/MyCard/MyCard'
 
 const ProjectsPage = () => {
     return (
-        // <div>hello</div>
-        <div className="flex h-full bg-slate-400 justify-center items-center">
-            <div className="grid grid-rows-2 h-full">
+        <div className="flex bg-black h-full justify-center items-center">
+            <div className="grid bg-black grid-rows-2 h-full">
                 <div
                     id="web-projects"
                     className="flex flex-row gap-10 items-center h-full"
                 >
-                    <Card className="w-60 h-60">card 1</Card>
-                    <Card className="w-60 h-60">card 2</Card>
+                    <MyCard
+                        header="Site/Patient Management Portal"
+                        subheader="ReactJs / NextJs"
+                        imageSrc="/ApnimedLogin.jpg"
+                        dark={true}
+                    />
+                    <MyCard
+                        header="Fluidics Web App"
+                        subheader="ReactJs"
+                        imageSrc="/Cassette2.png"
+                        dark={true}
+                    />
                 </div>
                 <div
                     id="desktop-wpf-projects"
                     className="flex flex-row gap-10 h-full items-center"
                 >
-                    <Card className="w-60 h-60"> wpf 1</Card>
-                    <Card className="w-60 h-60"> wpf 2</Card>
+                    <MyCard
+                        header="Cable Programmer/Tester"
+                        subheader="C# / WPF"
+                        imageSrc="/UctConnectionManagement.gif"
+                        dark={true}
+                    />
+                    <MyCard
+                        header="Blood Fluidics GUI"
+                        subheader="C# / WPF"
+                        imageSrc="/CurateDesktopApp.gif"
+                    />
                 </div>
             </div>
         </div>

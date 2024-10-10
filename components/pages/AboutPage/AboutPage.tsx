@@ -52,14 +52,31 @@ const AboutPage = () => {
                         </div>
 
                         <div className="row-span-2 flex-col justify-center">
-                            <p>Work Experience:</p>
+                            <h1 className="text-lg font-bold">
+                                Work Experience
+                            </h1>
                             <Divider />
-                            <p>Veranex (Aquired Fusion Biotec):</p>
-                            <p>Fusion Biotec:</p>
-                            <p>Fusion Biotec:</p>
-                            <p className="mt-4">Education:</p>
+                            <p>Veranex, Inc. Orange, CA:</p>
+                            <p className="ml-5">
+                                {' '}
+                                Senior Software Engineer (April 2023 - Present)
+                            </p>
+                            <p className="ml-5">
+                                {' '}
+                                Software Engineer (May 2020 - April 2023)
+                            </p>
+                            <p className="ml-5">
+                                {' '}
+                                Software Engineering Intern (May 2019 - April
+                                2020)
+                            </p>
+                            <p className="mt-5 text-lg font-bold">Education</p>
                             <Divider />
                             <p>University of California, Irvine</p>
+                            <p className="ml-5">
+                                {' '}
+                                Computer Engineering, B.S. (Sep 2016 - May 2020)
+                            </p>
                         </div>
                     </div>
                 </div>

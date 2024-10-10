@@ -7,7 +7,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-3 w-5/7">
                 <div className="flex items-center justify-center">
                     <Image
-                        src="/samuel_seo_headshot.jpg"
+                        src="/portfolio/samuel_seo_headshot.jpg"
                         width="355"
                         height="355"
                         alt="my-headshot"

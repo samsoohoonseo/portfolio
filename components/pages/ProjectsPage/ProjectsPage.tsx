@@ -11,13 +11,13 @@ const ProjectsPage = () => {
                     <MyCard
                         header="Site/Patient Management Portal"
                         subheader="ReactJs / NextJs"
-                        imageSrc="/ApnimedLogin.jpg"
+                        imageSrc="/portfolio/ApnimedLogin.jpg"
                         dark={true}
                     />
                     <MyCard
                         header="Fluidics Web App"
                         subheader="ReactJs"
-                        imageSrc="/Cassette2.png"
+                        imageSrc="/portfolio/Cassette2.png"
                         dark={true}
                     />
                 </div>
@@ -28,13 +28,13 @@ const ProjectsPage = () => {
                     <MyCard
                         header="Cable Programmer/Tester"
                         subheader="C# / WPF"
-                        imageSrc="/UctConnectionManagement.gif"
+                        imageSrc="/portfolio/UctConnectionManagement.gif"
                         dark={true}
                     />
                     <MyCard
                         header="Blood Fluidics GUI"
                         subheader="C# / WPF"
-                        imageSrc="/CurateDesktopApp.gif"
+                        imageSrc="/portfolio/CurateDesktopApp.gif"
                     />
                 </div>
             </div>
